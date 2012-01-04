@@ -16,6 +16,8 @@
 			<h2>Afghanistan 10-1</h2>
 		</header>
 		<form action="#" method="post">
+				
+				<!-- Personal Information -->
 				<fieldset>
 					<legend>Personal Information</legend>
 					<ul>
@@ -25,8 +27,45 @@
 						<li><label for="age">Age</label><input type="text" id="age"></li>
 						<li><label for="phone">Phone #</label><input type="text" id="phone" placeholder="123-456-7890"></li>
 					<ul/>
-		
-		
-		
-	</body>
+				</fieldset>
+				
+				<!-- Checklist -->
+				<fieldset>
+					<legend>Checklist</legend>
+						<ul>
+							<li>Gear:
+								<ul>
+									<li><input type="checkbox" value="Flak Jacket" id="flak" /><label for="flak">Flak Jacket<label></li>
+									<li><label># Flak Plate Serial Numbers</label><textarea id="plate#"></textarea></li>
+									<li><input type="checkbox" value="Kevlar" id="helmet" /><label for="helmet">Kevlar<label></li>
+									<li><input type="checkbox" value="Frog Gear" id="frog" /><label for="frog">Frog Gear<label></li>
+									<li><input type="checkbox" value="Cammies" id="cammies" /><label for="cammies">Cammies<label></li>
+									<li><input type="checkbox" value="Misc Gear" id="misc" /><label for="misc">Misc Gear<label></li>
+								</ul>
+							</li>
+							<li>
+								<label for="medical">Have you finished with Medical?</label>
+								<select id="medical">
+									<optgroup>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>
+									</optgroup>	
+								</select>
+							</li>	
+							
+							<li>
+								<label for="papers">Have you finished your Paperwork?</label>
+								<select id="papers">
+									<optgroup>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>
+										<option value="Almost">Almost</option>
+									</optgroup>	
+								</select>
+							</li>
+						</ul>
+					</fieldset>
+					<input type="sendit" value="Send it Up" />	
+				</form>
+		</body>
 </html>
