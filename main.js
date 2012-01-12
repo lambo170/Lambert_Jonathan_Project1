@@ -1,3 +1,7 @@
+// VFW Project Week 2
+// Jon Lambert
+// Class 0112
+
 window.addEventListener("DOMContentLoaded", function(){
 
 	
@@ -32,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 		}
 	}
-	
+	//Gear Checkboxes
 	function getCheckboxValue(){
 		if($('flak').checked){
 			flakValue = $('flak').value
@@ -148,7 +152,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 	}
 	
-	
+	// Various Variables
 	var medicalCheck = ["Choose:", "Yes", "No", "Almost"],
 		paperValue,
 		flakValue,
