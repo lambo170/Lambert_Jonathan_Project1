@@ -63,6 +63,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	function storeData(){
 		var id 	= Math.floor(Math.random()*10000001);
+		getSelectedRadio();
+		getCheckboxValue();
 		var item			 = {};
 			// INFO
 			item.fname		 = ["Name: ", $('fname').value];
