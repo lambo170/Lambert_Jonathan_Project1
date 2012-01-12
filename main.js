@@ -22,7 +22,26 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 		selectLi.appendChild(makeSelect);
 	}
-	
+	function storeData(){
+		var id 	= Math.floor(Math.random()*10000001);
+		var item			 = {};
+			// INFO
+			item.fname		 = ["Name: ", $('fname').value];
+			item.rank 		 = ["Rank: ", $('rank').value];
+			item.last4		 = ["Last 4: ", $('last4').value];
+			item.age		 = ["Age: ", $('age').value];
+			item.phone		 = ["Phone #: ", $('phone').value];
+			// GEAR
+			item.flakjacket  = ["Flak Jacket: ", $('flak').value];
+			item.serial		 = ["Flak Serials: ", $('plate#').value];
+			item.kevlar		 = ["Kevlar: ", $('helmet').value];
+			item.frogGear	 = ["Frog Gear: ", $('frog').value];
+			item.cammies	 = ["Cammies: ", $('cammies').value];
+			item.miscGear	 = ["Misc Gear: ", $('misc').value];
+			// MISC
+			item.medical	 =
+			item.papers		 =
+	}
 	
 	var medicalCheck = ["Choose:", "Yes", "No", "Almost"];
 	makeCats();
@@ -31,10 +50,10 @@ window.addEventListener("DOMContentLoaded", function(){
 	var displayLink = $('displayLink');
 	displayLink.addEventListener("click", getData);
 	var clearLink = $('clear');
-	clearLink.addEventListener("click", clearLocal);
+	clearLink.addEventListener("click", clearLocal);*/
 	var save = $('submit');
 	save.addEventListener("click", storeData);
-	*/
+	
 	
 	
 	
