@@ -1,0 +1,61 @@
+/* VFW Project Week 2
+	 Jon Lambert
+	 Class 0112 	*/
+
+	h1 {
+		/* top right bottom left "Clock" or top & bottom, left & right*/
+		margin: 10px;
+		font-family: impact;
+		border: 3px solid black;
+		padding: 10px;
+		background: gray;
+		width: 230px;
+	  }
+	
+	h2 {
+		font-family: impact;
+		margin: 10px;
+	}
+
+	p {
+		color: gray;
+		font-style:;			 /* italic */
+		font-family: arial;
+		font-weight:; 			/* bold */
+		font:10px; 				/*Catch All, "italic small bold 120px arial" */
+		line-height:25px;
+		letter-spacing:0px;
+		text-align:; /* left, right, center */
+		text-indent:;
+		text-transform:; /* caps, lowcase, uppercase etc. */
+		text-decoration:; /* underline, line through etc. */
+	}
+	a {
+		color: blue;
+		border: 1px solid blue;
+		font-family: arial;
+		margin: 10px;
+	}
+	
+	form {
+		font-family: impact;
+		font-size: ;
+		font-weight: ;
+	}
+	
+	ul {
+		font-family: arial;
+		font-weight: ;
+		color:;
+		background:;
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
