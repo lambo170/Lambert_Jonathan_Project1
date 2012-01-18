@@ -1,4 +1,4 @@
-<!-- VFW Project Week 2
+<!-- VFW Project Week 3
 	 Jon Lambert
 	 Class 0112 	-->
 
@@ -19,17 +19,20 @@
 	<body>
 		<header>
 			<h1>Pre-Deployment Checklist</h1>
-			<h2>Afghanistan 10-1</h2>
-			<a href="index.html">Back to Main Page</a>
-			<a href="additem.html" id="addNew" style="display:none;">Update List</a>
-			<a href="#" id="displayLink">Display Data</a></br></br>					
-			<a href="#" id="clear">Clear Data</a>
+			<h2 id="afghan">Afghanistan 10-1</h2>
+			<a href="index.html" class="button">Back to Main Page</a>
+			<a href="additem.html" id="addNew" style="display:none;" class="button">Update List</a>
+			<a href="#" id="displayLink" class="button">Display Data</a></br></br>					
+			<a href="#" id="clear" class="button">Clear Data</a>
+			<body background="cam3.jpg"> 
+			
 		</header>
-		<form action="#" method="post" id="PDChecklist" />
+		<form action="#" method="post" id="PDChecklist">
 				
 				<!-- Personal Information -->
 				<fieldset id="fs1">
-					<legend>Personal Information</legend>
+					<legend class="PI">Personal Information</legend>
+					<ul id="errors"></ul>
 					<ul>
 						<li><label for="fname">Full Name</label><input type="text" id="fname" placeholder="Last, First, MI"></li>
 						<li><label for="rank">Rank</label><input type="text" id="rank"></li>
@@ -41,7 +44,7 @@
 				
 				<!-- Checklist -->
 				<fieldset id="fs2">
-					<legend>Checklist</legend>
+					<legend class="PI">Checklist</legend>
 						<ul>
 							<li>Gear:
 								<ul>
