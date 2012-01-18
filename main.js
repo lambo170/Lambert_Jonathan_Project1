@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	function makeCats(){
 		var formTag = document.getElementsByTagName("form"),
 			selectLi = $('select'),
-			makeSelect = document.createElement('select'),
+			makeSelect = document.createElement('select');
 			makeSelect.setAttribute('id', 'groups');
 		for(var i=0, j=medicalCheck.length; i<j; i++){
 			var makeOption = document.createElement('option');
@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	function storeData(key){
 		//if no key, make brand new item with new key
 		if(!key){
-		var id 	= Math.floor(Math.random()*10000001);
+			var id 	= Math.floor(Math.random()*10000001);
 		}else{
 			id = key;
 		}
@@ -188,25 +188,25 @@ window.addEventListener("DOMContentLoaded", function(){
 		$('phone').value    = item.phone[1];
 		//GEAR
 			//flakjacket
-		if(item.flakjacket[1] == "Yes"){
+		if(item.flakjacket[1] === "Yes"){
 			$('flak').setAttribute("checked", "checked");
 		}
 			//serial
 		$('plate#').value	= item.serial[1];
 			//kevlar
-		if(item.kevlar[1] == "Yes"){
+		if(item.kevlar[1] === "Yes"){
 			$('helmet').setAttribute("checked", "checked");
 		}
 			//frogGear
-		if(item.frogGear[1] == "Yes"){
+		if(item.frogGear[1] === "Yes"){
 			$('frog').setAttribute("checked", "checked");
 		}
 			//cammies
-		if(item.cammies[1] == "Yes"){
+		if(item.cammies[1] === "Yes"){
 			$('cammies').setAttribute("checked", "checked");
 		}
 			//miscGear
-		if(item.miscGear[1] == "Yes"){
+		if(item.miscGear[1] === "Yes"){
 			$('misc').setAttribute("checked", "checked");
 		}
 		//MISC
@@ -215,11 +215,11 @@ window.addEventListener("DOMContentLoaded", function(){
 			//papers RADIO
 		var radios = document.forms[0].paper;
 		for(var i=0; i<radios.length; i++){
-			if(radios[i].value == "Yes" && item.papers[1] == "Yes"){
+			if(radios[i].value == "Yes" && item.papers[1] === "Yes"){
 				radios[i].setAttribute("checked", "checked");
-			}else if(radios[i].value = "No" && item.papers[1] == "No"){
+			}else if(radios[i].value = "No" && item.papers[1] === "No"){
 				radios[i].setAttribute("checked", "checked");
-			}else if(radios[i].value = "Almost" && item.papers[1] == "Almost"){
+			}else if(radios[i].value = "Almost" && item.papers[1] === "Almost"){
 				radios[i].setAttribute("checked", "checked");
 			}	
 		}
@@ -239,8 +239,8 @@ window.addEventListener("DOMContentLoaded", function(){
 		var ask = confirm("Are you sure you want to delete this information?");
 		if(ask){
 			localStorage.removeItem(this.key);
-			alert("Info deleted.")
-			window.location.reload
+			alert("Info deleted.");
+			window.location.reload();
 		}else{
 			alert("Info was not deleted.");
 		}
@@ -276,8 +276,8 @@ window.addEventListener("DOMContentLoaded", function(){
 			
 		
 		//get error messages
-		var messagesAry = [];
-		//text area validation  									***ADD A REGEXP SOMEWHERE BEFORE SUBMIT***
+		var messageAry = [];
+		//text area validation  								
 		if(getFname.value === ""){
 			var fNameError = "Please enter your full name.";
 			getFname.style.border = "1px solid red";
@@ -329,8 +329,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		frogValue,
 		cammiesValue,
 		miscValue,
-		errMsg = $('errors')
-		;
+		errMsg = $('errors');
 		
 	makeCats();
 	
