@@ -3,6 +3,15 @@
 	 Class 0112 	*/
 	
 	
+
+	
+	#items ul li {
+		background:#4E8975;
+		margin: 5px;
+		background: 1px solid black;
+	}
+	
+	
 	
 	h1 {
 		/* top right bottom left "Clock" or top & bottom, left & right*/
@@ -10,12 +19,44 @@
 		font-family: impact;
 		border: 3px solid black;
 		padding: 10px;
-		background: #4E8975;
+		/* IE10 */ 
+		background-image: -ms-linear-gradient(top, #4E8975 0%, #333333 100%);
+
+		/* Mozilla Firefox */ 
+		background-image: -moz-linear-gradient(top, #4E8975 0%, #333333 100%);
+
+		/* Opera */ 
+		background-image: -o-linear-gradient(top, #4E8975 0%, #333333 100%);
+
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4E8975), color-stop(1, #333333));
+
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-linear-gradient(top, #4E8975 0%, #333333 100%);
+
+		/* Proposed W3C Markup */ 
+		background-image: linear-gradient(top, #4E8975 0%, #333333 100%);
 		width: 230px;
 	  }
 	
 	#afghan{
-		background: #4E8975;
+		/* IE10 */ 
+		background-image: -ms-linear-gradient(top, #4E8975 0%, #333333 100%);
+
+		/* Mozilla Firefox */ 
+		background-image: -moz-linear-gradient(top, #4E8975 0%, #333333 100%);
+
+		/* Opera */ 
+		background-image: -o-linear-gradient(top, #4E8975 0%, #333333 100%);
+
+		/* Webkit (Safari/Chrome 10) */ 
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4E8975), color-stop(1, #333333));
+
+		/* Webkit (Chrome 11+) */ 
+		background-image: -webkit-linear-gradient(top, #4E8975 0%, #333333 100%);
+
+		/* Proposed W3C Markup */ 
+		background-image: linear-gradient(top, #4E8975 0%, #333333 100%);
 		border: 2px solid black;
 		padding: 10px;
 		width: 170px;
