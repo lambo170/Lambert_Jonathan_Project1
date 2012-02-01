@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var radios = document.forms[0].paper;
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].checked){
-			var	paperValue = radios[i].value;
+			paperValue = radios[i].value;
 			}
 		}
 	}
@@ -44,26 +44,26 @@ window.addEventListener("DOMContentLoaded", function(){
 		}else{
 			flakValue = "No";
 		}
-			if($('helmet').checked){
-				helmetValue = $('helmet').value;
-			}else{
-				helmetValue = "No";
-			}
-				if($('frog').checked){
-					frogValue = $('frog').value;
-				}else{
-					frogValue = "No";
-				}
-				 	if($('cammies').checked){
-						cammiesValue = $('cammies').value;
-					}else{
-						cammiesValue = "No";
-					}
-						if($('misc').checked){
-							miscValue = $('misc').value;
-						}else{
-							miscValue = "No";
-						}
+		if($('helmet').checked){
+			helmetValue = $('helmet').value;
+		}else{
+			helmetValue = "No";
+		}
+		if($('frog').checked){
+			frogValue = $('frog').value;
+		}else{
+			frogValue = "No";
+		}
+		if($('cammies').checked){
+			cammiesValue = $('cammies').value;
+		}else{
+			cammiesValue = "No";
+		}
+		if($('misc').checked){
+			miscValue = $('misc').value;
+		}else{
+			miscValue = "No";
+		}
 	}
 	
 	
