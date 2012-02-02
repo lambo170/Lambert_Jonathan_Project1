@@ -3,8 +3,19 @@
 	 Class 0112 	*/
 	
 	
-
+	.button {
+		margin: 15px;
+	}
 	
+	#top {
+		font-size:20px;
+	}
+	
+	
+	
+	
+
+/*	
 	#items ul li {
 		background:#4E8975;
 		margin: 5px;
@@ -39,7 +50,7 @@
 		width: 230px;
 	  }
 	
-	#afghan{
+/*	#afghan{
 		/* IE10 */ 
 		background-image: -ms-linear-gradient(top, #4E8975 0%, #333333 100%);
 
@@ -62,64 +73,64 @@
 		width: 170px;
 	}
 	
-	.button{
-		color: #B5EAAA;
-		background: #254117;
-		margin: 10px;
-		padding: 3px;
-		border: solid black 1px;
-	}
-	
-	h2 {
-		font-family: impact;
-		margin: 10px;
-	}
+	/*.button{
+			color: #B5EAAA;
+			background: #254117;
+			margin: 10px;
+			padding: 3px;
+			border: solid black 1px;
+		}
+		
+		h2 {
+			font-family: impact;
+			margin: 10px;
+		}
 
-	p {
-		color: black;
-		font-style:;			 /* italic */
-		font-family: arial;
-		font-weight:bold; 			/* bold */
-		font:10px; 				/*Catch All, "italic small bold 120px arial" */
-		line-height:25px;
-		letter-spacing:0px;
-		text-align:; /* left, right, center */
-		text-indent:;
-		text-transform:; /* caps, lowcase, uppercase etc. */
-		text-decoration:; /* underline, line through etc. */
-	}
+		p {
+			color: black;
+			font-style:;			 /* italic */
+			font-family: arial;
+			font-weight:bold; 			/* bold */
+			font:10px; 				/*Catch All, "italic small bold 120px arial" */
+			line-height:25px;
+			letter-spacing:0px;
+			text-align:; /* left, right, center */
+			text-indent:;
+			text-transform:; /* caps, lowcase, uppercase etc. */
+			text-decoration:; /* underline, line through etc. */
+		}
 
-	
-	form {
-		font-family: impact;
-		font-size: ;
-		font-weight: ;
-	}
-	
-	ul {
-		font-family: arial;
-		font-weight: ;
-		color:;
-		background:;
-	}
-	
-	#fs1{
-		background: #8EEBEC;
-		border: 10px solid #254117;
-		margin-top: 10px;
-	}
-	
-	#fs2{
-		background: #8EEBEC;
-		border: 10px solid #254117;
-		margin-top: 5px;
-	}
-	
-	.PI{
-		font-size: 20px;
-	}
-	
-
+		
+		/*form {
+					font-family: impact;
+					font-size: ;
+					font-weight: ;
+				}
+				
+				ul {
+					font-family: arial;
+					font-weight: ;
+					color:;
+					background:;
+				}
+				
+				#fs1{
+					background: #8EEBEC;
+					border: 10px solid #254117;
+					margin-top: 10px;
+				}
+				
+				#fs2{
+					background: #8EEBEC;
+					border: 10px solid #254117;
+					margin-top: 5px;
+				}
+				
+				.PI{
+					font-size: 20px;
+				}
+				*/*/
+			*/*/
 	
 
 	
