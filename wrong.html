@@ -1,0 +1,106 @@
+<!-- MIU Project Week 2
+	 Jon Lambert
+	 Class 0212 	-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>USMC</title>
+
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<link rel="stylesheet" href="style.css"/>
+		
+	</head>
+	<body>
+		
+		<div data-role="page" id="home">
+			
+			<div data-role="header" data-position="fixed">
+				<h1 id="top">Pre-Deployment </br> Checklist</h1>
+			</div>
+			
+			<div data-role"content">
+			    <p><center>Start your list or Update it for your Command Element.</center></p>
+			    <img src="images/predeploymentpic.jpg" width="390" height="250" location="center">
+			    <p><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a></p>
+			    <input type="search" id="search" placeholder="Search Marine's" /><br/>
+			</div>
+			
+			<div data-role"content">
+			    <ul data-role="listview" data-theme="d">
+			        <li data-Role="list-divider">Browse Marine's By:</li>
+			        <li class="button" ><a href="#rank">
+			            <img src="images/name.jpg"/>
+			            <h3>Name</h3>
+			        </a></li> 
+			        <li class="button"><a href="#rank">
+			            <img src="images/ssg.jpg"/>
+			            <h3>Rank</h3>
+			        </a></li>
+			        <li class="button"><a href="#rank">
+			            <img src="images/med.jpg"/>
+			            <h3>Medical Status</h3>
+			        </a></li>
+			        <li class="button"><a href="#rank">
+			            <img src="images/paper.jpg"/>
+			            <h3>Paperwork Status</h3>
+			        </a></li>
+			        <li class="button"><a href="#rank">
+			            <img src="images/gear.jpg"/>
+			            <h3>Gear Check</h3>
+			        </a></li>   
+			    </ul>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true">
+			    <h3>GitHub Live Links</h3>
+			    <a href="http://lambo170.github.com/Lambert_Jonathan_Project1">Live Code</a></br></br>
+			    <a href="https://lambo170@github.com/lambo170/Lambert_Jonathan_Project1.git">Repository</a>
+			</div>
+			
+			<div data-role="footer" data-position="fixed">
+			    <h4>Semper Fi</h4>	
+			</div>
+		    
+		<!-- </div>
+		      
+		      <div data-role="page" id="page2">
+		          
+		          <div data-role"header" data-position="fixed">
+		              <h1>Pre-Deployment Checklist</h1>
+		          </div>
+		          
+		          <div data-role"content">
+		              <p>Start new list or update it.</p>
+		          </div>
+		          
+		          <div data-role="footer" data-position="fixed">
+		              <h4>Footer</h4>
+		          </div>
+		          
+		      </div> -->
+		
+		
+		<!-- JavaScript and jQuery Mobile here -->	
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>	
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+
+</html>
+
+
+
+
+
