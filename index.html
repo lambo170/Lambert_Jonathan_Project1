@@ -19,7 +19,7 @@
 
 		<!-- StyleSheets under here -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
 		
 	</head>
 	<body>
@@ -43,37 +43,7 @@
 			    <img src="images/predeploymentpic.jpg" width="300" height="200" location="center">
 			    <a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
 			</div>
-<<<<<<< HEAD
 			
-			<div data-role"content">
-			    <ul data-role="listview" data-theme="d">
-			        <li data-Role="list-divider">Browse Marine's By:</li>
-			        <li class="button" ><a href="#rank">
-			            <img src="images/name.jpg"/>
-			            <h3>Name</h3>
-			        </a></li> 
-			        <li class="button"><a href="#rank">
-			            <img src="images/ssg.jpg"/>
-			            <h3>Rank</h3>
-			        </a></li>
-			        <li class="button"><a href="#rank">
-			            <img src="images/med.jpg"/>
-			            <h3>Medical Status</h3>
-			        </a></li>
-			        <li class="button"><a href="#rank">
-			            <img src="images/paper.jpg"/>
-			            <h3>Paperwork Status</h3>
-			        </a></li>
-			        <li class="button"><a href="#rank">
-			            <img src="images/gear.jpg"/>
-			            <h3>Gear Check</h3>
-			        </a></li>   
-			    </ul>
-			</div>
-			
-=======
-		
->>>>>>> master
 			<div data-role="collapsible" data-collapsed="true">
 			    <h3>GitHub Live Links</h3>
 			    <a href="http://lambo170.github.com/Lambert_Jonathan_Project1">Live Code</a></br></br>
@@ -103,7 +73,7 @@
         	<div data-role"content">
         	    <ul data-role="listview" data-theme="d">
         	        <li data-Role="list-divider">Browse Marine's By:</li>
-        	        <li class="button" ><a href="#rank">
+        	        <li class="button" ><a href="#name">
         	            <img src="images/name.jpg"/>
         	            <h3>Name</h3>
         	        </a></li> 
@@ -111,15 +81,15 @@
         	            <img src="images/ssg.jpg"/>
         	            <h3>Rank</h3>
         	        </a></li>
-        	        <li class="button"><a href="#rank">
+        	        <li class="button"><a href="#medical">
         	            <img src="images/med.jpg"/>
         	            <h3>Medical Status</h3>
         	        </a></li>
-        	        <li class="button"><a href="#rank">
+        	        <li class="button"><a href="#paperwork">
         	            <img src="images/paper.jpg"/>
         	            <h3>Paperwork Status</h3>
         	        </a></li>
-        	        <li class="button"><a href="#rank">
+        	        <li class="button"><a href="#gear">
         	            <img src="images/gear.jpg"/>
         	            <h3>Gear Check</h3>
         	        </a></li>   
@@ -154,11 +124,191 @@
                 <h4>Semper Fi</h4>	
             </div>
         </div>
+
+		<div data-role="page" id="name" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Name</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <p class="data">Name: Fernando Westervelt</br>  Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Althea Muscarella</br>    Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Neil Thome</br>           Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Darren Dries</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Kurt Ridings</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Malinda Shiner</br>       Rank: CPL</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Javier Czeriwnksi</br>    Rank: SGT</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Saundra Tilly</br>        Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Darren Donatelli</br>     Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Cody Deere</br>           Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Julio Richeson</br>       Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Darren Hamon</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Ted Freytag</br>          Rank: CPL</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Bork Haulder</br>         Rank: SGT</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Clayton Mcquinn</br>      Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Kenya Chain</br>          Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Guy Gehl</br>             Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Karina Holen</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Nelson Kildow</br>        Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Fernando Zirkle</br>      Rank: SSGT</br> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			</div>                                                                                                          
+	    
+	        <div data-role"footer" data-position="static">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+		
+		<div data-role="page" id="rank" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Rank</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <p class="data">Rank: PFC</br>  Name: Fernando Westervelt</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: PFC</br>  Name: Althea Muscarella</br>    Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Neil Thome</br>           Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Darren Dries</br>         Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Kurt Ridings</br>         Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: CPL</br>  Name: Malinda Shiner</br>       Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Rank: SGT</br>  Name: Javier Czeriwnksi</br>    Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Rank: PFC</br>  Name: Saundra Tilly</br>        Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: PFC</br>  Name: Darren Donatelli</br>     Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Cody Deere</br>           Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Julio Richeson</br>       Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Darren Hamon</br>         Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: CPL</br>  Name: Ted Freytag</br>          Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Rank: SGT</br>  Name: Bork Haulder</br>         Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Rank: PFC</br>  Name: Clayton Mcquinn</br>      Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: PFC</br>  Name: Kenya Chain</br>          Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Guy Gehl</br>             Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Karina Holen</br>         Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: LCPL</br> Name: Nelson Kildow</br>        Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Rank: SSGT</br> Name: Fernando Zirkle</br>      Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			</div>    
+	    
+	        <div data-role"footer">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+		
+		<div data-role="page" id="medical" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Medical</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <h2>Not Ready</h2>
+			    <p class="data">Name: Malinda Shiner</br>       Rank: CPL</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Javier Czeriwnksi</br>    Rank: SGT</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Ted Freytag</br>          Rank: CPL</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Bork Haulder</br>         Rank: SGT</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Fernando Zirkle</br>      Rank: SSGT</br> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			</div>    
+	    
+	        <div data-role"footer">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+		
+		<div data-role="page" id="paperwork" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Paperwork</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <h2>Not Ready</h2>
+			    <p class="data">Name: Darren Dries</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: No</br>   Gear: No</br></p>
+			    <p class="data">Name: Kurt Ridings</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: No</br>   Gear: No</br></p>
+			    <p class="data">Name: Malinda Shiner</br>       Rank: CPL</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Javier Czeriwnksi</br>    Rank: SGT</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Ted Freytag</br>          Rank: CPL</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Bork Haulder</br>         Rank: SGT</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    <p class="data">Name: Fernando Zirkle</br>      Rank: SSGT</br> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			</div>    
+	    
+	        <div data-role"footer">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+		
+		<div data-role="page" id="gear" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Gear</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <h2>Not Ready</h2>
+			    <p class="data">Name: Fernando Westervelt</br>  Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Althea Muscarella</br>    Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Neil Thome</br>           Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Darren Dries</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Kurt Ridings</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Saundra Tilly</br>        Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Darren Donatelli</br>     Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Cody Deere</br>           Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Julio Richeson</br>       Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Darren Hamon</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Clayton Mcquinn</br>      Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Kenya Chain</br>          Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Guy Gehl</br>             Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Karina Holen</br>         Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    <p class="data">Name: Nelson Kildow</br>        Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p> 
+			</div>    
+	    
+	        <div data-role"footer">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
 		
 		<!-- JavaScript and jQuery Mobile here -->	
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>	
-		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="javascript/main.js"></script>
 	</body>
 
 </html>

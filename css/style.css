@@ -2,6 +2,12 @@
 	 Jon Lambert
 	 Class 0112 	*/
 	
+	.data {
+		border: 2px solid black;
+		background : white;
+		padding: 10px;
+	}
+	
 	#right {
 		color:green;
 	}
