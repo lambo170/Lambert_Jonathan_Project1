@@ -31,7 +31,7 @@
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
                 	<ul>
-                		<li><a href="a.html" data-icon="search">Search</a></li>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
                 		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
@@ -42,7 +42,6 @@
 			    <p><center>Start your list or Update it for your </br> Command Element.</p>
 			    <img src="images/predeploymentpic.jpg" width="300" height="200" location="center">
 			    <a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
-			    <input type="search" id="search" placeholder="Search Marine's" /><br/>
 			</div>
 		
 			<div data-role="collapsible" data-collapsed="true">
@@ -117,32 +116,11 @@
 			</div>
 			
         	<div data-role"content">
-        	    <ul data-role="listview" data-theme="d">
-        	        <li data-Role="list-divider">Browse Marine's By:</li>
-        	        <li class="button" ><a href="#rank">
-        	            <img src="images/name.jpg"/>
-        	            <h3>Name</h3>
-        	        </a></li> 
-        	        <li class="button"><a href="#rank">
-        	            <img src="images/ssg.jpg"/>
-        	            <h3>Rank</h3>
-        	        </a></li>
-        	        <li class="button"><a href="#rank">
-        	            <img src="images/med.jpg"/>
-        	            <h3>Medical Status</h3>
-        	        </a></li>
-        	        <li class="button"><a href="#rank">
-        	            <img src="images/paper.jpg"/>
-        	            <h3>Paperwork Status</h3>
-        	        </a></li>
-        	        <li class="button"><a href="#rank">
-        	            <img src="images/gear.jpg"/>
-        	            <h3>Gear Check</h3>
-        	        </a></li>   
-        	    </ul>
+        	    <br/><input type="search" id="search" placeholder="Search Marine's" /><br/>
+        	    <p class="sampledata">"SAMPLE"</br>Name:</br>Rank:</br>Last 4:</br>Gear:</br>Medical:</p>
             </div>
             
-            <div data-role="footer" data-position="static">
+            <div data-role="footer" data-position="fixed">
                 <h4>Semper Fi</h4>	
             </div>
         </div>
