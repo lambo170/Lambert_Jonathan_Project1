@@ -27,15 +27,23 @@
 		<div data-role="page" id="home">
 			
 			<div data-role="header" data-position="fixed">
-				<h1 id="top">Pre-Deployment </br> Checklist</h1>
+				<h1>Pre-Deployment Checklist</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
 			</div>
 			
 			<div data-role"content">
-			    <p>Start your list or Update it for your Command Element.</p>
-			    <img src="images/predeploymentpic.jpg" width="390" height="250" location="center">
-			    <p><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a></p>
-			    <input type="search" id="search" placeholder="Search Marine's" /><br/>
+			    <p><center>Start your list or Update it for your </br> Command Element.</p>
+			    <img src="images/predeploymentpic.jpg" width="300" height="200" location="center">
+			    <a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
 			</div>
+<<<<<<< HEAD
 			
 			<div data-role"content">
 			    <ul data-role="listview" data-theme="d">
@@ -63,34 +71,89 @@
 			    </ul>
 			</div>
 			
+=======
+		
+>>>>>>> master
 			<div data-role="collapsible" data-collapsed="true">
 			    <h3>GitHub Live Links</h3>
 			    <a href="http://lambo170.github.com/Lambert_Jonathan_Project1">Live Code</a></br></br>
 			    <a href="https://lambo170@github.com/lambo170/Lambert_Jonathan_Project1.git">Repository</a>
 			</div>
 			
-			<div data-role="footer" data-position="fixed">
+			<div data-role="footer" data-position="static">
 			    <h4>Semper Fi</h4>	
 			</div>
 		    
-		<!-- </div>
+	    </div>
+	    
+	    <div data-role="page" id="browsepage" data-add-back-btn="true">	
+	        
+	        <div data-role="header" data-position="fixed">
+				<h1>Browse By:</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+        	<div data-role"content">
+        	    <ul data-role="listview" data-theme="d">
+        	        <li data-Role="list-divider">Browse Marine's By:</li>
+        	        <li class="button" ><a href="#rank">
+        	            <img src="images/name.jpg"/>
+        	            <h3>Name</h3>
+        	        </a></li> 
+        	        <li class="button"><a href="#rank">
+        	            <img src="images/ssg.jpg"/>
+        	            <h3>Rank</h3>
+        	        </a></li>
+        	        <li class="button"><a href="#rank">
+        	            <img src="images/med.jpg"/>
+        	            <h3>Medical Status</h3>
+        	        </a></li>
+        	        <li class="button"><a href="#rank">
+        	            <img src="images/paper.jpg"/>
+        	            <h3>Paperwork Status</h3>
+        	        </a></li>
+        	        <li class="button"><a href="#rank">
+        	            <img src="images/gear.jpg"/>
+        	            <h3>Gear Check</h3>
+        	        </a></li>   
+        	    </ul>
+            </div>
+            
+            <div data-role="footer" data-position="static">
+                <h4>Semper Fi</h4>	
+            </div>
+        </div>
 		      
-		      <div data-role="page" id="page2">
-		          
-		          <div data-role"header" data-position="fixed">
-		              <h1>Pre-Deployment Checklist</h1>
-		          </div>
-		          
-		          <div data-role"content">
-		              <p>Start new list or update it.</p>
-		          </div>
-		          
-		          <div data-role="footer" data-position="fixed">
-		              <h4>Footer</h4>
-		          </div>
-		          
-		      </div> -->
-		
+		<div data-role="page" id="searchpage" data-add-back-btn="true">	
+	        
+	        <div data-role="header" data-position="fixed">
+				<h1>Marine Search</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+        	<div data-role"content">
+        	    <br/><input type="search" id="search" placeholder="Search Marine's" /><br/>
+        	    <p class="sampledata">"SAMPLE"</br>Name:</br>Rank:</br>Last 4:</br>Gear:</br>Medical:</p>
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <h4>Semper Fi</h4>	
+            </div>
+        </div>
 		
 		<!-- JavaScript and jQuery Mobile here -->	
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
