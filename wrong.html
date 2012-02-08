@@ -7,7 +7,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>USMC</title>
+		<title>Wrong USMC</title>
 
 		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
 		<meta name="HandheldFriendly" content="True">
@@ -20,20 +20,18 @@
 		<!-- StyleSheets under here -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 		<link rel="stylesheet" href="css/style.css"/>
-		
 	</head>
 	<body>
 		
 		
-		<div data-role="page" id="home">
+		<div data-role="page" id="whome">
 			
 			<div data-role="header" data-position="fixed">
 				<h1>Pre-Deployment Checklist</h1>
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
-                	<ul>
-                		<li><a href="#searchpage" data-icon="search">Search</a></li>
-                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                	<ul> 
+                		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
                 </div>
@@ -41,7 +39,7 @@
 			
 			<div data-role"content">
 			    <p><center>Start your list or Update it for your </br> Command Element.</p>
-			    <img src="images/predeploymentpic.jpg" width="300" height="200" location="center">
+			    <img src="images/predeploymentpic.jpg" width="275" height="175" location="center">
 			    <a href="construction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
 			</div>
 			
@@ -57,50 +55,49 @@
 		    
 	    </div>
 	    
-	    <div data-role="page" id="browsepage" data-add-back-btn="true">	
+	    <div data-role="page" id="wbrowsepage" data-add-back-btn="true">	
 	        
 	        <div data-role="header" data-position="fixed">
 				<h1>Browse By:</h1>
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
-                	<ul>
-                		<li><a href="#searchpage" data-icon="search">Search</a></li>
-                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                	<ul> 
+                		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
                 </div>
 			</div>
 			
         	<div data-role"content">
-        	    <ul data-role="listview" data-theme="d">
+        	    <ul data-role="listview" data-theme="d" >
         	        <li data-Role="list-divider">Browse Marine's By:</li>
         	        <fieldset class="ui-grid-b">
         	            <div class="ui-block-a">
-                	        <li class="button" ><a href="#name">
+                	        <li class="button" ><a href="#wname">
                 	            <img src="images/name.jpg"/>
                 	            <h3>Name</h3>
                 	        </a></li> 
             	        </div>
             	        <div class="ui-block-b">
-                	        <li class="button"><a href="#rank">
+                	        <li class="button"><a href="#wrank">
                 	            <img src="images/ssg.jpg"/>
                 	            <h3>Rank</h3>
                 	        </a></li>
             	        </div>
             	        <div class="ui-block-c">
-                	        <li class="button"><a href="#medical">
+                	        <li class="button"><a href="#wmedical">
                 	            <img src="images/med.jpg"/>
                 	            <h3>Medical Status</h3>
                 	        </a></li>
             	        </div>
             	        <div class="ui-block-a">
-                	        <li class="button"><a href="#paperwork">
+                	        <li class="button"><a href="#wpaperwork">
                 	            <img src="images/paper.jpg"/>
                 	            <h3>Paperwork Status</h3>
                 	        </a></li>
             	        </div>
             	        <div class="ui-block-b">
-                	        <li class="button"><a href="#gear">
+                	        <li class="button"><a href="#wgear">
                 	            <img src="images/gear.jpg"/>
                 	            <h3>Gear Check</h3>
             	                </a></li>
@@ -113,15 +110,14 @@
             </div>
         </div>
 		      
-		<div data-role="page" id="searchpage" data-add-back-btn="true">	
+		<div data-role="page" id="wsearchpage" data-add-back-btn="true">	
 	        
 	        <div data-role="header" data-position="fixed">
 				<h1>Marine Search</h1>
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
-                	<ul>
-                		<li><a href="#searchpage" data-icon="search">Search</a></li>
-                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                	<ul> 
+                		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
                 </div>
@@ -137,15 +133,14 @@
             </div>
         </div>
 
-		<div data-role="page" id="name" data-add-back-btn="true">
+		<div data-role="page" id="wname" data-add-back-btn="true">
 			
 			<div data-role="header" data-position="fixed">
 				<h1>Browse By: Name</h1>
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
-                	<ul>
-                		<li><a href="#searchpage" data-icon="search">Search</a></li>
-                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                	<ul> 
+                		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
                 </div>
@@ -179,15 +174,14 @@
 	        </div>
 	    </div>
 		
-		<div data-role="page" id="rank" data-add-back-btn="true">
+		<div data-role="page" id="wrank" data-add-back-btn="true">
 			
 			<div data-role="header" data-position="fixed">
 				<h1>Browse By: Rank</h1>
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
-                	<ul>
-                		<li><a href="#searchpage" data-icon="search">Search</a></li>
-                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                	<ul> 
+                		<li><a href="w#browsepage" data-icon="search">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
                 </div>
@@ -221,15 +215,14 @@
 	        </div>
 	    </div>
 		
-		<div data-role="page" id="medical" data-add-back-btn="true">
+		<div data-role="page" id="wmedical" data-add-back-btn="true">
 			
 			<div data-role="header" data-position="fixed">
 				<h1>Browse By: Medical</h1>
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
-                	<ul>
-                		<li><a href="#searchpage" data-icon="search">Search</a></li>
-                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                	<ul> 
+                		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
                 </div>
@@ -249,15 +242,14 @@
 	        </div>
 	    </div>
 		
-		<div data-role="page" id="paperwork" data-add-back-btn="true">
+		<div data-role="page" id="wpaperwork" data-add-back-btn="true">
 			
 			<div data-role="header" data-position="fixed">
 				<h1>Browse By: Paperwork</h1>
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
-                	<ul>
-                		<li><a href="#searchpage" data-icon="search">Search</a></li>
-                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                	<ul> 
+                		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
                 </div>
@@ -279,15 +271,14 @@
 	        </div>
 	    </div>
 		
-		<div data-role="page" id="gear" data-add-back-btn="true">
+		<div data-role="page" id="wgear" data-add-back-btn="true">
 			
 			<div data-role="header" data-position="fixed">
 				<h1>Browse By: Gear</h1>
 				<!-- Navigation Bar -->
 				<div data-role="navbar">
-                	<ul>
-                		<li><a href="#searchpage" data-icon="search">Search</a></li>
-                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                	<ul> 
+                		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
                 		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
                 	</ul>
                 </div>
@@ -318,7 +309,7 @@
 	    </div>
         
 		
-		<!-- JavaScript and jQuery Mobile here -->	
+		<!-- JavaScript and jQuery Mobile here -->
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>	
 		<script type="text/javascript" src="javascript/main.js"></script>

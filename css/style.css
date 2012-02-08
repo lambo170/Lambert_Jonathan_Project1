@@ -2,6 +2,7 @@
 	 Jon Lambert
 	 Class 0112 	*/
 	
+
 	.data {
 		border: 2px solid black;
 		background : white;
@@ -12,7 +13,7 @@
 		color:green;
 	}
 	
-	#wrong {
+	.wrong {
 		color: red;
 	}
 	
