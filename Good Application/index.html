@@ -18,8 +18,10 @@
 		<meta http-equiv="cleartype" content="on">
 
 		<!-- StyleSheets under here -->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
 		<link rel="stylesheet" href="css/style.css"/>
+		
 	</head>
 	<body>
 	    <div data-role="page" id="home">
@@ -29,7 +31,7 @@
 				<div data-role="navbar">
                 	<ul>
                 		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -37,7 +39,7 @@
 			<div data-role"content">
 			    <p><center>Start your list or Update it for your </br> Command Element. </br> Or </br> Check for Marine's Updates Below.</p>
 			    <img src="images/predeploymentpic.jpg" width="300" height="200" location="center">
-			    <a href="construction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
+			    <a href="#marineform" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
 	            <ul data-role="listview">
 			       <li data-role="list-divider"> <h2>News Stream Updates:</h2>        </li>
     			   <li data-role="list-divider"> <h4>- 110102 -</h4>                  </li>
@@ -76,7 +78,7 @@
 				<div data-role="navbar">
                 	<ul>
                 		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -146,7 +148,7 @@
 				<div data-role="navbar">
                 	<ul>
                 		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -247,7 +249,7 @@
 				<div data-role="navbar">
                 	<ul>
                 		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -304,7 +306,7 @@
 				<div data-role="navbar">
                 	<ul>
                 		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -346,7 +348,7 @@
 				<div data-role="navbar">
                 	<ul>
                 		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -396,7 +398,7 @@
 				<div data-role="navbar">
                 	<ul>
                 		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="c#home" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -470,11 +472,108 @@
 	        </div>
 	    </div>
    
-		<!-- JavaScript and jQuery Mobile here -->
-		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>	
+        <div data-role="page" id="marineform" data-add-back-btn="true">
+
+            <div data-role="header" data-position="fixed">
+				<h1>Deployment Checklist</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role="content">
+			    <form action="" method="post" id="marinedata">
+			        <div data-role="fieldcontain">
+			            <h3>Personal Information:</h3>
+    		            <label for="marinesname">Name:</label>
+    			        <input type="text" name="marinesname" id="marinesname" placeholder="Last, First, MI" class="required"/>
+		                    
+    			        <label for="marinesrank">Rank:</label>
+    			        <input type="text" name="marinesrank" id="marinesrank" placeholder="PVT, CPL, SSGT, etc." class="required"/>
+		        
+    			        <label for="marineslast4">Social:</label>
+    			        <input type="text" name="marineslast4" id="marineslast4" placeholder="Last 4" class="required number"/>
+		        
+    			        <label for="marinesage">Age:</label>
+    			        <input type="text" name="marinesage" id="marinesage" class="required number"/>
+		        
+    			        <label for="marinesphone">Phone #</label>
+    			        <input type="text" name="marinesphone" id="marinesphone" placeholder="###-###-####" class="required" /> 
+    			        
+    			        <label for="marinegroup">Deployment Group #</label>
+                        <input type="range" name="marinegroup" id="marinegroup" value="3" min="1" max="5" />
+                        
+                        <label for="mydate">Today's Date:</label>
+
+                        <input name="mydate" id="mydate" type="date" data-role="datebox"
+                           data-options='{"mode": "calbox", "calTodayButton": true "disableManualInput": true}'>
+			        </div>
+			        <div>
+			            <h3>Check List:</h3>
+    			        <fieldset data-role="controlgroup">
+    			            <legend>Gear:</legend>
+    			            <input type="checkbox" value="Flak Jacket" name="check-list" id="check-list-1">
+    			            <label for="check-list-1">Flak Jacket</label>
+    			            <input type="checkbox" value="Kevlar" name="check-list" id="check-list-2">
+    			            <label for="check-list-2">Kevlar</label>
+    			            <input type="checkbox" value="Frog Gear" name="check-list" id="check-list-3">
+    			            <label for="check-list-3">Frog Gear</label>
+    			            <input type="checkbox" value="Cammies" name="check-list" id="check-list-4">
+    			            <label for="check-list-4">Cammies</label>
+    			            <input type="checkbox" value="Misc Gear" name="check-list" id="check-list-5">
+    			            <label for="check-list-5">Misc Gear</label>
+			            </fieldset>
+			        </div>
+			        <div>
+    			        <fieldset data-role="controlgroup" data-type="horizontal">
+    			            <legend>Paperwork Complete?</legend>
+    			            <input type="radio" value="Yes" name="papers" id="papers1" />
+    			            <label for="papers1">Yes</label>
+    			            <input type="radio" value="No" name="papers" id="papers2" checked="checked" />
+    			            <label for="papers2">No</label>
+    			            <input type="radio" value="Almost" name="papers" id="papers3" />
+    			            <label for="papers3">Almost</label>
+			            </fieldset>
+			        </div>
+			        
+			        <div data-role="fieldcontain">
+    			        <fieldset data-role="controlgroup" data-type="horizontal">
+    			            <legend>Medical Complete?</legend>
+    			            <input type="radio" value="Yes" name="yesno" id="yesno1"/>
+    			            <label for="yesno1">Yes</label>
+    			            <input type="radio" value="No" name="yesno" id="yesno2" checked="checked"/>
+    			            <label for="yesno2">No</label>
+    			            <input type="radio" value="Almost" name="yesno" id="yesno3"/>
+    			            <label for="yesno3">Almost</label>
+			            </fieldset>
+			        </div>
+			        
+			        <div data-role="fieldcontain">
+			            <fieldset class="ui-grid-a">
+			                <div class="ui-block-a"><input type="submit" value="Submit" data-theme="b" /></div>
+    			            <div class="ui-block-b"><input type="reset" value="Reset" data-theme="a"/></div>
+    			        </fieldset>
+			        </div>
+			            
+			    </form>    
+			</div>    
+        </div>   
+            
+		<!-- JavaScript and jQuery Mobile here --> /> 
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+        <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
+		
+		<script type="text/javascript" src="libs/jquery.validate.min.js"></script>	
 		<script type="text/javascript" src="javascript/main.js"></script>
 		<script type="text/javascript" src="javascript/json.js"></script>
+		
 	</body>
 
 </html>

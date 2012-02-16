@@ -1,8 +1,42 @@
 //VFW Project Week 3
 //Jon Lambert
 //Class 0112
+var parseMarinesData = function(data){
+	// uses form data here
+};
+
+$(document).ready(function(){
+	
+	var mdform = $('#marinedata')
+	
+	mdform.validate({
+		invalidHandler: function(form, validator){
+			
+		},
+		submitHandler: function(){
+			var data = mdform.serializeArray();
+			parseMarineData(data);
+		}
+	});
+	
+});
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 window.addEventListener("DOMContentLoaded", function(){
 
 	
@@ -373,7 +407,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	
 	
-	
+*/	
 	
 	
 	

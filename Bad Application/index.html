@@ -18,7 +18,8 @@
 		<meta http-equiv="cleartype" content="on">
 
 		<!-- StyleSheets under here -->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<body>
@@ -29,7 +30,7 @@
 				<div data-role="navbar">
                 	<ul> 
                 		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -37,7 +38,7 @@
 			<div data-role"content">
 			    <p><center>Start your list or Update it for your </br> Command Element.</p>
 			    <img src="images/predeploymentpic.jpg" width="275" height="175" location="center">
-			    <a href="construction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
+			    <a href="#wmarineform" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
 			</div>
 			<div data-role="collapsible" data-collapsed="true">
 			    <h3>GitHub Live Links</h3>
@@ -59,7 +60,7 @@
 				<div data-role="navbar">
                 	<ul> 
                 		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -71,31 +72,26 @@
         	            <div class="ui-block-a">
                 	        <li class="button" ><a href="#wname">
                 	            <img src="images/name.jpg"/>
-                	            <h3>Name</h3>
                 	        </a></li> 
             	        </div>
             	        <div class="ui-block-b">
                 	        <li class="button"><a href="#wrank">
                 	            <img src="images/ssg.jpg"/>
-                	            <h3>Rank</h3>
                 	        </a></li>
             	        </div>
             	        <div class="ui-block-c">
                 	        <li class="button"><a href="#wmedical">
                 	            <img src="images/med.jpg"/>
-                	            <h3>Medical Status</h3>
                 	        </a></li>
             	        </div>
             	        <div class="ui-block-a">
                 	        <li class="button"><a href="#wpaperwork">
                 	            <img src="images/paper.jpg"/>
-                	            <h3>Paperwork Status</h3>
                 	        </a></li>
             	        </div>
             	        <div class="ui-block-b">
                 	        <li class="button"><a href="#wgear">
                 	            <img src="images/gear.jpg"/>
-                	            <h3>Gear Check</h3>
             	                </a></li>
         	        </fieldset>   
         	    </ul>
@@ -114,7 +110,7 @@
 				<div data-role="navbar">
                 	<ul> 
                 		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -137,7 +133,7 @@
 				<div data-role="navbar">
                 	<ul> 
                 		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -178,7 +174,7 @@
 				<div data-role="navbar">
                 	<ul> 
                 		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -219,7 +215,7 @@
 				<div data-role="navbar">
                 	<ul> 
                 		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -246,7 +242,7 @@
 				<div data-role="navbar">
                 	<ul> 
                 		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -275,7 +271,7 @@
 				<div data-role="navbar">
                 	<ul> 
                 		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
-                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
                 	</ul>
                 </div>
 			</div>
@@ -304,11 +300,212 @@
 	        </div>
 	    </div>
         
+        <div data-role="page" id="wmarineform" data-add-back-btn="true">
+
+            <div data-role="header" data-position="fixed">
+				<h1>Wrong Checklist</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#wbrowsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#whome" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role="content">
+			    <form action="" method="post" id="marinedata">
+			        <div>
+			            <h3>Personal Information:</h3>
+    		            <label for="marinesname">Name:</label>
+    			        <input type="text" name="marinesname" id="marinesname" placeholder="John Doe" class="required"/>
+		                    
+    			        <div>
+    			            <label for="rank">Rank</label>
+    			            <select name="rank" id="rank" data-native-menu="false" class="required">
+    			                <option data-placeholder="true">Please Select One:</option>
+    			                <option value="pvt">Private</option>
+    			                <option value="pfc">Private First Class</option>
+    			                <option value="lcpl">Lance Corporal</option>
+    			                <option value="cpl">Corporal</option>
+    			                <option value="sgt">Sergeant</option>
+    			                <option value="ssgt">Staff Sergeant</option>
+    			                <option value="gysgt">Gunnery Sergeant</option>
+    			                <option value="msgt">Master Sergeant</option>
+    			                <option value="1stsgt">First Sergeant</option>
+    			                <option value="mgysgt">Master Gunnery Sergeant</option>
+    			                <option value="sgtmaj">Sergeant Major</option>
+    			                <option value="2lt">2nd Lieutenant</option>
+    			                <option value="1lt">1st Lieutenant</option>
+    			                <option value="capt">Captain</option>
+    			                <option value="maj">Major</option>
+    			                <option value="ltcol">Lieutenant Colonel</option>
+    			                <option value="col">Colonel</option>
+    			                <option value="bgen">Brigadier General</option>
+    			                <option value="majgen">Major General</option>
+    			                <option value="ltgen">Lieutenant General</option>
+    			                <option value="gen">General</option>    
+    			            </select>   
+    			        </div>
+		        
+    			        <label for="marineslast4">Social:</label>
+    			        <input type="text" name="marineslast4" id="marineslast4" placeholder="" class="required number"/>
+		        
+    			        <div>
+    			            <label for="age">Age</label>
+    			            <select name="age" id="age" data-native-menu="false" class="required">
+    			                <option data-placeholder="true">Please Select One:</option>
+    			                <option value="17">17</option>
+    			                <option value="18">18</option>
+    			                <option value="19">19</option>
+    			                <option value="20">20</option>
+    			                <option value="21">21</option>
+    			                <option value="22">22</option>
+    			                <option value="23">23</option>
+    			                <option value="24">24</option>
+    			                <option value="25">25</option>
+    			                <option value="26">26</option>
+    			                <option value="27">27</option>
+    			                <option value="28">28</option>
+    			                <option value="29">29</option>
+    			                <option value="30">30</option>
+    			                <option value="31">31</option>
+    			                <option value="32">32</option>
+    			                <option value="33">33</option>
+    			                <option value="34">34</option>
+    			                <option value="35">35</option>
+    			                <option value="36">36</option>
+    			                <option value="37">37</option>
+    			                <option value="38">38</option>
+    			                <option value="39">39</option>
+    			                <option value="40">40</option>
+    			                <option value="41">41</option>
+    			                <option value="42">42</option>
+    			                <option value="43">43</option>
+    			                <option value="44">44</option>
+    			                <option value="45">45</option>
+    			                <option value="46">46</option>
+    			                <option value="47">47</option>
+    			                <option value="48">48</option>
+    			                <option value="49">49</option>
+    			                <option value="50">50</option> 
+    			            </select>   
+    			        </div>
+		        
+    			        <label for="marinesphone">Phone #</label>
+    			        <input type="text" name="marinesphone" id="marinesphone" placeholder="" class="required" /> 
+    			        
+    			        <label for="marinegroup">Deployment Group #</label>
+                        <input type="range" name="marinegroup" id="marinegroup" value="1" min="1" max="5" />
+
+                        <div data-role="fieldcontain">
+                            <fieldset data-role="controlgroup">
+                            	<legend>Todays Date:</legend>
+
+                                <label for="select-choice-month">Month</label>
+                            <select name="select-choice-month" id="select-choice-month" class="required">
+                            	<option>Month</option>
+                            	<option value="jan">January</option>
+                            	<option value="feb">February</option>
+                            	<option value="mar">March</option>
+                            	<option value="apr">April</option>
+                            	<option value="may">May</option>
+                            	<option value="jun">June</option>
+                            	<option value="jul">July</option>
+                            	<option value="aug">August</option>
+                            	<option value="sep">September</option>
+                            	<option value="oct">October</option>
+                            	<option value="nov">November</option>
+                            	<option value="dec">December</option>
+                            </select>
+
+                            	<label for="select-choice-day">Day</label>
+                            <select name="select-choice-day" id="select-choice-day" class="required">
+                            	<option>Day</option>
+                            	<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+                            	
+                            </select>
+
+                            <label for="select-choice-year">Year</label>
+                            <select name="select-choice-year" id="select-choice-year">
+                            	<option>2012</option>
+                            	<option value="2012">2012</option>
+                            </select>
+                            </fieldset>
+                        </div>
+			        </div>
+			        <div>
+			            <h3>Check List:</h3>
+    			        <fieldset data-role="controlgroup">
+    			            <legend>Gear:</legend>
+    			            <input type="checkbox" value="Flak Jacket" name="check-list" id="check-list-1">
+    			            <label for="check-list-1">Flak Jacket</label>
+    			            <input type="checkbox" value="Kevlar" name="check-list" id="check-list-2">
+    			            <label for="check-list-2">Kevlar</label>
+    			            <input type="checkbox" value="Frog Gear" name="check-list" id="check-list-3">
+    			            <label for="check-list-3">Frog Gear</label>
+    			            <input type="checkbox" value="Cammies" name="check-list" id="check-list-4">
+    			            <label for="check-list-4">Cammies</label>
+    			            <input type="checkbox" value="Misc Gear" name="check-list" id="check-list-5">
+    			            <label for="check-list-5">Misc Gear</label>
+			            </fieldset>
+			        </div>
+			        <div>
+			            <label for="papercheck">Paperwork Complete?</label>
+			            <select name="papercheck" id="papercheck" data-native-menu="false" class="required">
+			                <option data-placeholder="true">Please Select One:</option>
+			                <option value="Yes">Yes</option>
+			                <option value="No">No</option>
+			                <option value="Almost">Almost</option> 
+			            </select>   
+			        </div>
+			        
+			        <div data-role="fieldcontain">
+			            <label for="medicalcheck">Medical Complete?</label>
+			            <select name="medicalcheck" id="medicalcheck" data-native-menu="false" class="required">
+			                <option data-placeholder="true">Please Select One:</option>
+			                <option value="Yes">Yes</option>
+			                <option value="No">No</option>
+			                <option value="Almost">Almost</option> 
+			            </select>   
+			        </div>
+			        
+			        <div data-role="fieldcontain">
+			            <fieldset class="ui-grid-a">
+			                <div class="ui-block-a"><input type="submit" value="Submit" data-theme="b" /></div>
+    			            <div class="ui-block-b"><input type="reset" value="Reset" data-theme="a"/></div>
+    			        </fieldset>
+			        </div>
+			        
+			        <a href="#wmarineformerrors" id="wmferrorsLink" data-rel="dialog" data-transition="pop">Show Errors</a>
+			            
+			    </form>    
+			</div>    
+        </div>   
+        
+		<div data-role="dialog" id="wmarineformerrors">
+		    
+		    <div data-role="header" data-position="fixed">
+		        <h1>Missing Fields</h1>
+		    </div>
+		    
+		    <div data-role="content">
+		        <ul>
+		            <li></li>
+		        </ul>    
+		    </div>        
+		</div>    
 		
 		<!-- JavaScript and jQuery Mobile here -->
-		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+        <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
+		
+		<script type="text/javascript" src="libs/jquery.validate.min.js"></script>	
 		<script type="text/javascript" src="javascript/main.js"></script>
+		<script type="text/javascript" src="javascript/json.js"></script>
 	</body>
 
 </html>
