@@ -2,11 +2,27 @@
 	 Jon Lambert
 	 Class 0112 	*/
 	
+	#wmferrorsLink{display:none;}
+	
+	label.error{
+		display:block;
+		margin:10px 0;
+		color:red;
+		font-weight:bold;
+	}
+
+	.data {
+		border: 2px solid black;
+		background : white;
+		padding: 10px;
+	}
+	
+
 	#right {
 		color:green;
 	}
-	
-	#wrong {
+
+	.wrong {
 		color: red;
 	}
 	

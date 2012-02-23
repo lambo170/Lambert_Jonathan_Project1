@@ -1,0 +1,589 @@
+<!-- MIU Project Week 2
+	 Jon Lambert
+	 Class 0212 	-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title>USMC</title>
+
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="themes/military.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" />
+		<link rel="stylesheet" href="css/style.css"/>
+		<style type="text/css">
+            .ui-page {
+                background: transparent url(images/cam.png);
+            }
+        </style>
+	</head>
+	<body>
+	    <div data-role="page" id="home">
+			<div data-role="header" data-position="fixed">
+				<h1><img src="images/brand.png" width="200" height="70" location="center"></h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <p><center>Start your list or Update it for your </br> Command Element. </br> Or </br> Check for Marine's Updates Below.</p>
+			    <img src="images/predeploymentpic.jpg" width="300" height="200" location="center">
+			    <a href="#marineform" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="e">Start/Update</a>
+	            <ul data-role="listview">
+			       <li data-role="list-divider"> <h2>News Stream Updates:</h2>        </li>
+    			   <li data-role="list-divider"> <h4>- 110102 -</h4>                  </li>
+    			   <li> <p>Neil Thome Updated Medical Status</p>   </li>
+    			   <li> <p>Kurt Ridings Started New List</p>         </li>
+    			   <li> <p>Cody Deere Updated Paperwork Status</p> </li>
+    			   <li data-role="list-divider"> <h4>- 101228 -</h4>                  </li>
+    			   <li> <p>Julio Richeson Started New List</p>         </li>
+    			   <li data-role="list-divider"> <h4>- 101210 -</h4>                  </li>
+    			   <li> <p>Ted Freytag Updated Gear</p>             </li>
+    			   <li> <p>Bork Haulder Updated Gear</p>             </li>
+    			   <li> <p>Clayton Mcquinn Updated Gear</p>             </li>
+    			   <li data-role="list-divider"> <h4>- 101201 -</h4>                  </li>
+    			   <li> <p>Fernando Zirkle Updated Rank</p>             </li>
+    			   <li> <p>Nelson Kildow Updated Rank</p>             </li>
+    			   <li> <p>Karina Holen Updated Rank</p>             </li>
+    			<ul/>    
+			</div>
+			<div data-role="collapsible" data-collapsed="true">
+			    <h3>GitHub Live Links</h3>
+			    <a href="http://lambo170.github.com/Lambert_Jonathan_Project1">Live Code</a></br></br>
+			    <a href="http://github.com/lambo170">Repository</a>
+			</div>
+			
+			<div data-role="footer" data-position="static">
+			    <h4>Semper Fi</h4>	
+			</div>
+		    
+	    </div>
+	    
+	    <div data-role="page" id="browsepage" data-add-back-btn="true">	
+	        
+	        <div data-role="header" data-position="fixed">
+				<h1><img src="images/brand.png" width="200" height="70" location="center"></h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+        	<div data-role"content">
+        	    </br>
+        	    <ul data-role="listview" data-filter="true" data-theme="d">
+        	        <li data-Role="list-divider">Browse Marine's By:</li>
+                	    <li class="button" ><a href="#name">
+            	            <img src="images/name.jpg"/>
+            	            <h3>Name</h3>
+            	        </a></li>
+                	    <li class="button"><a href="#rank">
+            	            <img src="images/ssg.jpg"/>
+            	            <h3>Rank</h3>
+            	        </a></li>
+                	    <li class="button"><a href="#medical">
+            	            <img src="images/med.jpg"/>
+            	            <h3>Medical Status</h3>
+            	        </a></li>
+                	    <li class="button"><a href="#paperwork">
+            	            <img src="images/paper.jpg"/>
+            	            <h3>Paperwork Status</h3>
+            	        </a></li>
+                	    <li class="button"><a href="#gear">
+            	            <img src="images/gear.jpg"/>
+            	            <h3>Gear Check</h3>
+                	    </a></li>
+                    </ul>
+            </div>
+            
+            <div data-role="footer" data-position="static">
+                <h4>Semper Fi</h4>	
+            </div>
+        </div>
+		      
+		<div data-role="page" id="searchpage" data-add-back-btn="true">	
+	        
+	        <div data-role="header" data-position="fixed">
+				<h1>Marine Search</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#searchpage" data-icon="search">Search</a></li>
+                		<li><a href="#browsepage" data-icon="info">Browse By:</a></li>
+                		<li><a href="choice.html" data-icon="home">Right/Wrong</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+        	<div data-role"content">
+        	    <br/><input type="search" id="search" placeholder="Search Marine's" /><br/>
+        	    <p class="sampledata">"SAMPLE"</br>Name:</br>Rank:</br>Last 4:</br>Gear:</br>Medical:</p>
+            </div>
+            
+            <div data-role="footer" data-position="fixed">
+                <h4>Semper Fi</h4>	
+            </div>
+        </div>
+
+		<div data-role="page" id="name" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Name</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content" data-filter="true">
+			        <div data-role="collapsible">
+    			        <h3>Fernando Westervelt</h3>
+    			        <p class="data">Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Althea Muscarella</h3>
+    			        <p class="data">Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Neil Thome</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Darren Dries</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Kurt Ridings</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Malinda Shiner</h3>
+    			        <p class="data">Rank: CPL</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Javier Czeriwnksi</h3>
+    			        <p class="data">Rank: SGT</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Saundra Tilly</h3>
+    			        <p class="data">Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Darren Donatelli</h3>
+    			        <p class="data">Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Cody Deere</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Julio Richeson</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Darren Hamon</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Ted Freytag</h3>
+    			        <p class="data">Rank: CPL</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Bork Haulder</h3>
+    			        <p class="data">Rank: SGT</br>  Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Clayton Mcquinn</h3>
+    			        <p class="data">Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Kenya Chain</h3>
+    			        <p class="data">Rank: PFC</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Guy Gehl</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Karina Holen</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Nelson Kildow</h3>
+    			        <p class="data">Rank: LCPL</br> Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    </div>
+    			    <div data-role="collapsible">
+    			        <h3>Fernando Zirkle</h3>
+    			        <p class="data">Rank: SSGT</br> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			        </div>
+			</div>                                                                                                          
+	    
+	        <div data-role"footer" data-position="static">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+		
+		<div data-role="page" id="rank" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Rank</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <div data-role="collapsible">
+			        <h3>Staff Sergeant</h3>
+			        <p class="data">Name: Fernando Zirkle</br>      Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>Sergeant</h3>
+			        <p class="data">Name: Bork Haulder</br>         Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			        <p class="data">Name: Javier Czeriwnksi</br>    Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>Corporal</h3>
+			        <p class="data">Name: Malinda Shiner</br>       Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+    			    <p class="data">Name: Cody Deere</br>           Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Julio Richeson</br>       Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Ted Freytag</br>          Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>Lance Corporal</h3>
+			        <p class="data">Name: Neil Thome</br>           Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Darren Dries</br>         Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Kurt Ridings</br>         Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Guy Gehl</br>             Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Karina Holen</br>         Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Nelson Kildow</br>        Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Darren Hamon</br>         Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>Private First Class</h3>
+			        <p class="data">Name: Fernando Westervelt</br>  Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Althea Muscarella</br>    Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Saundra Tilly</br>        Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Darren Donatelli</br>     Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Clayton Mcquinn</br>      Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+    			    <p class="data">Name: Kenya Chain</br>          Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>    
+			        
+			</div>    
+	    
+	        <div data-role"footer">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+		
+		<div data-role="page" id="medical" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Medical</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <h2>Not Ready</h2>
+			    <div data-role="collapsible">
+			        <h3>CPL Malinda Shiner</h3>
+			    <p class="data">Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>SGT Javier Czeriwnksi</h3>
+			    <p class="data">Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>CPL Ted Freytag</h3>
+			    <p class="data"> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>SGT Bork Haulder</h3>
+			    <p class="data">Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>SSGT Fernando Zirkle</h3>
+			    <p class="data">Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			</div>    
+	    
+	        <div data-role"footer">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+		
+		<div data-role="page" id="paperwork" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Paperwork</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <h2>Not Ready</h2>
+			    <div data-role="collapsible">
+			        <h3>LCPL Darren Dries</h3>
+			    <p class="data"> Medical: Yes</br>   Paperwork: No</br>   Gear: No</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>LCPL Kurt Ridings</h3>
+			    <p class="data"> Medical: Yes</br>   Paperwork: No</br>   Gear: No</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>CPL Malinda Shiner</h3>
+			    <p class="data"> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>SGT Javier Czeriwnksi</h3>
+			    <p class="data"> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>CPL Ted Freytag</h3>
+			    <p class="data"> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>SGT Bork Haulder</h3>
+			    <p class="data"> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			    <div data-role="collapsible">
+			        <h3>SSGT Fernando Zirkle</h3>
+			    <p class="data"> Medical: No</br>    Paperwork: No</br>    Gear: Yes</br></p>
+			    </div>
+			</div>    
+	    
+	        <div data-role"footer">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+		
+		<div data-role="page" id="gear" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+				<h1>Browse By: Gear</h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="c#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role"content">
+			    <h2>Not Ready</h2>
+			    <div data-role="collapsible">
+			        <h3>PFC Fernando Westervelt</h3> 
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>PFC Althea Muscarella</h3>   
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Neil Thome</h3>         
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Darren Dries</h3>       
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Kurt Ridings</h3>       
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>PFC Saundra Tilly</h3>       
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>PFC Darren Donatelli</h3>    
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Cody Deere</h3>         
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Julio Richeson</h3>     
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Darren Hamon</h3>       
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>PFC Clayton Mcquinn</h3>     
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>PFC Kenya Chain</h3>         
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Guy Gehl</h3>           
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Karina Holen</h3>       
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p>
+			    </div>                               
+			    <div data-role="collapsible">        
+			        <h3>LCPL Nelson Kildow</h3>      
+			    <p class="data">Medical: Yes</br>   Paperwork: Yes</br>   Gear: No</br></p> 
+			    </div>
+			</div>    
+	    
+	        <div data-role"footer">
+	           <h4>Semper Fi</h4>
+	        </div>
+	    </div>
+   
+        <div data-role="page" id="marineform" data-add-back-btn="true" data-theme="a">
+
+            <div data-role="header" data-position="fixed">
+				<h1><img src="images/brand.png" width="200" height="70" location="center"></h1>
+				<!-- Navigation Bar -->
+				<div data-role="navbar">
+                	<ul>
+                		<li><a href="#browsepage" data-icon="search">Browse By:</a></li>
+                		<li><a href="#home" data-icon="home">Home</a></li>
+                	</ul>
+                </div>
+			</div>
+			
+			<div data-role="content">
+			    <form action="" method="post" id="marinedata">
+			        <div data-role="fieldcontain">
+			            <h3>Personal Information:</h3>
+    		            <label for="marinesname">Name:</label>
+    			        <input type="text" name="marinesname" id="marinesname" placeholder="Last, First, MI" class="required"/>
+		                    
+    			        <label for="marinesrank">Rank:</label>
+    			        <input type="text" name="marinesrank" id="marinesrank" placeholder="PVT, CPL, SSGT, etc." class="required"/>
+		        
+    			        <label for="marineslast4">Social:</label>
+    			        <input type="text" name="marineslast4" id="marineslast4" placeholder="Last 4" class="required number"/>
+		        
+    			        <label for="marinesage">Age:</label>
+    			        <input type="text" name="marinesage" id="marinesage" class="required number"/>
+		        
+    			        <label for="marinesphone">Phone #</label>
+    			        <input type="text" name="marinesphone" id="marinesphone" placeholder="###-###-####" class="required" /> 
+    			        
+    			        <label for="marinegroup">Deployment Group #</label>
+                        <input type="range" name="marinegroup" id="marinegroup" value="3" min="1" max="5" />
+                        
+                        <label for="mydate">Today's Date:</label>
+
+                        <input name="mydate" id="mydate" type="date" data-role="datebox"
+                           data-options='{"mode": "calbox", "calTodayButton": true "disableManualInput": true}'>
+			        </div>
+			        <div>
+			            <h3>Check List:</h3>
+    			        <fieldset data-role="controlgroup">
+    			            <legend>Gear:</legend>
+    			            <input type="checkbox" value="Flak Jacket" name="check-list" id="check-list-1">
+    			            <label for="check-list-1">Flak Jacket</label>
+    			            <input type="checkbox" value="Kevlar" name="check-list" id="check-list-2">
+    			            <label for="check-list-2">Kevlar</label>
+    			            <input type="checkbox" value="Frog Gear" name="check-list" id="check-list-3">
+    			            <label for="check-list-3">Frog Gear</label>
+    			            <input type="checkbox" value="Cammies" name="check-list" id="check-list-4">
+    			            <label for="check-list-4">Cammies</label>
+    			            <input type="checkbox" value="Misc Gear" name="check-list" id="check-list-5">
+    			            <label for="check-list-5">Misc Gear</label>
+			            </fieldset>
+			        </div>
+			        <div>
+    			        <fieldset data-role="controlgroup" data-type="horizontal">
+    			            <legend>Paperwork Complete?</legend>
+    			            <input type="radio" value="Yes" name="papers" id="papers1" />
+    			            <label for="papers1">Yes</label>
+    			            <input type="radio" value="No" name="papers" id="papers2" checked="checked" />
+    			            <label for="papers2">No</label>
+    			            <input type="radio" value="Almost" name="papers" id="papers3" />
+    			            <label for="papers3">Almost</label>
+			            </fieldset>
+			        </div>
+			        
+			        <div data-role="fieldcontain">
+    			        <fieldset data-role="controlgroup" data-type="horizontal">
+    			            <legend>Medical Complete?</legend>
+    			            <input type="radio" value="Yes" name="yesno" id="yesno1"/>
+    			            <label for="yesno1">Yes</label>
+    			            <input type="radio" value="No" name="yesno" id="yesno2" checked="checked"/>
+    			            <label for="yesno2">No</label>
+    			            <input type="radio" value="Almost" name="yesno" id="yesno3"/>
+    			            <label for="yesno3">Almost</label>
+			            </fieldset>
+			        </div>
+			        
+			        <div data-role="fieldcontain">
+			            <fieldset class="ui-grid-a">
+			                <div class="ui-block-a"><input type="submit" value="Submit" data-theme="b" /></div>
+    			            <div class="ui-block-b"><input type="reset" value="Reset" data-theme="a"/></div>
+    			        </fieldset>
+			        </div>
+			            
+			    </form>    
+			</div>    
+        </div>   
+            
+		<!-- JavaScript and jQuery Mobile here --> /> 
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+        <script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		
+		<script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
+        <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i8n/jquery.mobile.datebox.i8n.en.js"></script>
+		
+		<script type="text/javascript" src="libs/jquery.validate.min.js"></script>	
+		<script type="text/javascript" src="javascript/main.js"></script>
+		<script type="text/javascript" src="javascript/json.js"></script>
+		
+	</body>
+
+</html>
+
+
+
+
+

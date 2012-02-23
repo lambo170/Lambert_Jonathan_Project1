@@ -1,0 +1,322 @@
+var json = {
+	"marine1": {
+		"fname": 		["Full Name:", "Motard"],
+		"rank":  		["Rank:", "Private"],
+		"last4": 		["Last 4:", "0987"],
+		"age":   		["Age:", "18"],
+		"phone": 		["Phone #:", "567-678-7890"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "A001, B002"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "Almost"]
+		
+	},
+	"marine2": {
+		"fname": 		["Full Name:", "Bootstain"],
+		"rank":  		["Rank:", "Private First Class"],
+		"last4": 		["Last 4:", "1234"],
+		"age":   		["Age:", "19"],
+		"phone": 		["Phone #:", "123-234-3456"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "212A, 313B"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "No"],
+		"papers": 		["Paperwork?", "No"]
+		
+	},
+	"marine3": {
+		"fname": 		["Full Name:", "Schmuckatelly"],
+		"rank":  		["Rank:", "Lance Corporal"],
+		"last4": 		["Last 4:", "7777"],
+		"age":   		["Age:", "20"],
+		"phone": 		["Phone #:", "123-555-0909"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Yes"],
+		"papers": 		["Paperwork?", "No"]
+		
+	},
+	"marine4": {
+		"fname": 		["Full Name:", "Crunch"],
+		"rank":  		["Rank:", "Captain"],
+		"last4": 		["Last 4:", "8374"],
+		"age":   		["Age:", "28"],
+		"phone": 		["Phone #:", "849-283-3948"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "POI1, POI2"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "No"],
+		"papers": 		["Paperwork?", "Yes"]
+		
+	},
+	"marine5": {
+		"fname": 		["Full Name:", "Payne"],
+		"rank":  		["Rank:", "Major"],
+		"last4": 		["Last 4:", "4275"],
+		"age":   		["Age:", "32"],
+		"phone": 		["Phone #:", "985-231-5543"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "2371, 2373"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "No"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Yes"],
+		"papers": 		["Paperwork?", "Yes"]
+		
+	},
+	"marine6": {
+		"fname": 		["Full Name:", "Screamer"],
+		"rank":  		["Rank:", "Staff Sergeant"],
+		"last4": 		["Last 4:", "9013"],
+		"age":   		["Age:", "25"],
+		"phone": 		["Phone #:", "238-139-1239"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "No"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Yes"],
+		"papers": 		["Paperwork?", "No"]
+		
+	},
+	"marine7": {
+		"fname": 		["Full Name:", "Skater"],
+		"rank":  		["Rank:", "Lance Corporal"],
+		"last4": 		["Last 4:", "7853"],
+		"age":   		["Age:", "19"],
+		"phone": 		["Phone #:", "555-555-0987"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "No"],
+		"miscGear": 	["Misc. Gear:", "Yes"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "Almost"]
+		
+	},
+	"marine8": {
+		"fname": 		["Full Name:", "Humvee"],
+		"rank":  		["Rank:", "Corporal"],
+		"last4": 		["Last 4:", "7723"],
+		"age":   		["Age:", "21"],
+		"phone": 		["Phone #:", "849-384-0983"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "B212, C212"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "No"]
+		
+	},
+	"marine9": {
+		"fname": 		["Full Name:", "Emsixten"],
+		"rank":  		["Rank:", "Master Sergeant"],
+		"last4": 		["Last 4:", "5382"],
+		"age":   		["Age:", "38"],
+		"phone": 		["Phone #:", "111-222-3333"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "Almost"]
+		
+	},
+	"marine10": {
+		"fname": 		["Full Name:", "Baretta"],
+		"rank":  		["Rank:", "Private First Class"],
+		"last4": 		["Last 4:", "1574"],
+		"age":   		["Age:", "18"],
+		"phone": 		["Phone #:", "999-888-7777"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "No"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "No"],
+		"papers": 		["Paperwork?", "Yes"]
+		
+	},
+	"marine11": {
+		"fname": 		["Full Name:", "Lambo"],
+		"rank":  		["Rank:", "Corporal"],
+		"last4": 		["Last 4:", "1701"],
+		"age":   		["Age:", "22"],
+		"phone": 		["Phone #:", "253-555-1234"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "A00231, B202020"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "Yes"],
+		"medical": 		["Medical?", "Yes"],
+		"papers": 		["Paperwork?", "Yes"]
+		
+	},
+	"marine12": {
+		"fname": 		["Full Name:", "Conman"],
+		"rank":  		["Rank:", "Lance Corporal"],
+		"last4": 		["Last 4:", "4373"],
+		"age":   		["Age:", "28"],
+		"phone": 		["Phone #:", "619-555-1290"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "Yes"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "No"]
+		
+	},
+	"marine13": {
+		"fname": 		["Full Name:", "Byrde"],
+		"rank":  		["Rank:", "Lance Corporal"],
+		"last4": 		["Last 4:", "1899"],
+		"age":   		["Age:", "19"],
+		"phone": 		["Phone #:", "836-234-5743"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "No"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "Almost"]
+		
+	},
+	"marine14": {
+		"fname": 		["Full Name:", "Isvasis"],
+		"rank":  		["Rank:", "Staff Sergeant"],
+		"last4": 		["Last 4:", "7012"],
+		"age":   		["Age:", "29"],
+		"phone": 		["Phone #:", "555-444-8887"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Yes"],
+		"papers": 		["Paperwork?", "Yes"]
+		
+	},
+	"marine15": {
+		"fname": 		["Full Name:", "Bolt"],
+		"rank":  		["Rank:", "Lance Corporal"],
+		"last4": 		["Last 4:", "5471"],
+		"age":   		["Age:", "23"],
+		"phone": 		["Phone #:", "923-493-2391"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "No"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "No"],
+		"papers": 		["Paperwork?", "Almost"]
+		
+	},
+	"marine16": {
+		"fname": 		["Full Name:", "Doe"],
+		"rank":  		["Rank:", "Private"],
+		"last4": 		["Last 4:", "2323"],
+		"age":   		["Age:", "18"],
+		"phone": 		["Phone #:", "023-432-5048"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Yes"],
+		"papers": 		["Paperwork?", "No"]
+		
+	},
+	"marine17": {
+		"fname": 		["Full Name:", "Pendleton"],
+		"rank":  		["Rank:", "Sergeant"],
+		"last4": 		["Last 4:", "1775"],
+		"age":   		["Age:", "24"],
+		"phone": 		["Phone #:", "923-293-4942"],
+		"flakjacket": 	["Flak Jacket:", "No"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "No"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Yes"],
+		"papers": 		["Paperwork?", "No"]
+		
+	},
+	"marine18": {
+		"fname": 		["Full Name:", "Marsoc"],
+		"rank":  		["Rank:", "Lance Corporal"],
+		"last4": 		["Last 4:", "4327"],
+		"age":   		["Age:", "20"],
+		"phone": 		["Phone #:", "9239"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "NA, NA"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "Yes"],
+		"miscGear": 	["Misc. Gear:", "No"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "Yes"]
+		
+	},
+	"marine19": {
+		"fname": 		["Full Name:", "Dwyer"],
+		"rank":  		["Rank:", "Private First Class"],
+		"last4": 		["Last 4:", "1010"],
+		"age":   		["Age:", "21"],
+		"phone": 		["Phone #:", "525-101-1010"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "SAND, BOX"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "Yes"],
+		"cammies": 		["Cammies:", "No"],
+		"miscGear": 	["Misc. Gear:", "Yes"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "Almost"]
+		
+	},
+	"marine20": {
+		"fname": 		["Full Name:", "Leatherneck"],
+		"rank":  		["Rank:", "Private"],
+		"last4": 		["Last 4:", "9982"],
+		"age":   		["Age:", "18"],
+		"phone": 		["Phone #:", "123-555-0909"],
+		"flakjacket": 	["Flak Jacket:", "Yes"],
+		"serial": 		["Serial #'s:", "2010, 2011"],
+		"kevlar": 		["Kevlar:", "Yes"],
+ 		"frogGear": 	["Frog Gear:", "No"],
+		"cammies": 		["Cammies:", "No"],
+		"miscGear": 	["Misc. Gear:", "Yes"],
+		"medical": 		["Medical?", "Almost"],
+		"papers": 		["Paperwork?", "Yes"]
+		
+	}
+}
